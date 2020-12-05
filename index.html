@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    button{
+        border-radius: 0;
+        background: transparent;
+        border: 1px solid #999;
+        color: #1d1d1d;
+        padding: 7px 15px;
+        line-height: 1;
+        cursor: pointer;
+    }
+    .slide{
+        display: none;
+    }
+    .slide > img{
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .slide.active{
+        display: block;
+    }
+    button:focus{
+        outline: 0;
+    }
+</style>
+
+<div class="slider">
+
+    <div class="slide">
+        <img src="images/1.jpg" alt="">
+    </div>
+    <div class="slide">
+        <img src="images/2.jpg" alt="">
+    </div>
+    <div class="slide">
+        <img src="images/3.jpg" alt="">
+    </div>
+
+    <button class="button" id="prev">Prev</button>
+    <button class="button" id="next">Next</button>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
